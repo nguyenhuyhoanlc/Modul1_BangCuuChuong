@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<table id="demo" border="1"></table>
+<script>
+    let html;
+    html = '';
+    for (let i=1; i<10 ; i++){
+        html += '<tr>';
+        for (let j=1; j<10;j++){
+            html += '<td>' + j + 'x' + i + '=' + i*j +'</td>';
+        }
+        html += '</tr>';
+    }
+    document.getElementById("demo").innerHTML=html
+</script>
+</body>
+</html>
